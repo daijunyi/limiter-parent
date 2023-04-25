@@ -1,0 +1,4 @@
+# Auto Configure
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.djy.limiter.autoconfigure.PlatformLimiterAutoConfiguration, \
+com.djy.limiter.autoconfigure.PlatformRetryAutoConfiguration

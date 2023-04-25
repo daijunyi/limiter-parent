@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.djy.limiter</groupId>
+    <artifactId>limiter-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>limiter-parent</name>
+    <modules>
+        <module>limiter-core</module>
+        <module>limiter</module>
+        <module>limiter-spring-boot-autoconfigure</module>
+        <module>limiter-spring-boot-starter</module>
+        <module>limiter-dependencies</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.djy.limiter</groupId>
+                <artifactId>limiter-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.djy.limiter</groupId>
+                <artifactId>limiter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.djy.limiter</groupId>
+                <artifactId>limiter-spring-boot-autoconfigure</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.djy.limiter</groupId>
+                <artifactId>limiter-spring-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
